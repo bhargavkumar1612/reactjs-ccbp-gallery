@@ -1,1 +1,26 @@
 /* Write your code here. */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image {
+  width: 50%;
+  margin: 20px;
+}
+.thumbnails {
+  width: 50%;
+}
+.headings {
+  width: 50%;
+}
+.heading {
+  color: #1e293b;
+  font-family: Roboto;
+  font-size: 26px;
+}
+.para {
+  color: #64748b;
+  font-family: Roboto;
+  font-size: 16px;
+}

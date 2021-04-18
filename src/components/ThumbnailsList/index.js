@@ -4,10 +4,19 @@ import './index.css'
 
 class ThumbnailList extends Component {
   render() {
+    const {photosData, changeState} = this.props
     return (
-      <div>
-        <h1>ThumbnailList</h1>
-      </div>
+      <>
+        {photosData.map(item => (
+          <img
+            key={item.id}
+            src={item.thumbnailUrl}
+            alt={item.thumbnailAltText}
+            className="thumbnail"
+            onClick={() => changeState(item.id)}
+          />
+        ))}
+      </>
     )
   }
 }
